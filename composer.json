@@ -1,0 +1,26 @@
+{
+    "name": "txxkirsch/cakephp-live",
+    "description": "Live plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "cakephp/cakephp": ">=5.0",
+        "cboden/ratchet": "^0.4.4",
+        "react/zmq": "^0.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5 || ^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Live\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Live\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    }
+}
